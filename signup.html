@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>signup</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box; 
+         }
+         body{
+             background-color: rgb(157, 167, 167);
+         }
+         .row{
+             background-color: white;
+             border-radius: 30px;
+             box-shadow: 12px 12px 22px black;
+         }
+         img{
+             border-top-left-radius: 30px;
+             border-bottom-left-radius: 30px;
+         }
+         .btn1{
+             border:none;
+             outline: none;
+             height: 50px;
+             width:100%;
+             background-color: black;
+             color: white;
+             border-radius: 4px;
+             font-weight: bold;
+         }
+         .btn1:hover{
+             background-color: white;
+             border:1px solid;
+             color:black;
+         }
+    </style>
+  </head>
+  <body>
+    <section class="Form my-4 mx-5">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-5">
+                    <img src="register1.jpg" class="img-responsive" width="450" height="575" alt="register">
+                </div>
+                <div class="col-lg-7 px-5 pt-5">
+                    <h1 class="font-weight-bold py-3">SIGN UP</h1>
+                    <h4>sign into your account</h4><br>
+                    <form>
+                        <h6>NAME</h6>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <input type="name" placeholder="Name" class="form-control my-3 p-2" id="text1">
+                            </div>
+                        </div>
+                        <h6>EMAIL</h6>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <input type="email" class="form-control my-3" placeholder="Email" id="text2">
+                            </div>
+                        </div>
+                        <h6>COMPANY NAME</h6>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <input type="companyname" class="form-control my-3" placeholder="Company name" id="text3">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7">
+                                <button type="button" class="btn1 my-3" onclick="myfun()">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script>
+        function myfun(){
+            var x1=document.getElementById('text1').value;
+            var x2=document.getElementById('text2').value;
+            var x3=document.getElementById('text3').value;
+            alert("NAME : "+x1+"\nEMAIL : "+x2+"\nCOMPANY : "+x3);
+             }
+    </script>
+  </body>
+</html>
